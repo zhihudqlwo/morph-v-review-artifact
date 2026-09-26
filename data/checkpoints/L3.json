@@ -1,0 +1,372 @@
+{
+  "entries": [
+    {
+      "admission": {
+        "admission_sha256": "c76f8519b1b632831a621e2194bb2c0377757a0a552daeb5ac549a62be6bfccd",
+        "carrier": "interval",
+        "execution_sha256s": [
+          "6e3f8846bb1fcb4ae4f3a2b440f57f35219f758a64838ae784938e9b06ea9c24",
+          "f158c40dba10d38a1203cbf58bfe48724b6ed53e88e22fa2071ace24cdf66670",
+          "cce059594f4b11ba1f2d38bbb9a7ccba52ef858dca0aebf2e1241034b6c32407",
+          "8a8046936c9d553c3248b649b4b2174bc1b83fc1319a177495c21ef1c3f3f68d",
+          "8893f6657c5294079ab89d7f55db7167ca998814dae132b176fc90ccfb979d24",
+          "620ad27185a713a8f7083d7236f8171f801db624314bfa81d72b2809d2f8f06f",
+          "99a644161a204cb1f10f86d491f1dd05904638d551fc9c7d89678547cfe0e018",
+          "957a2ca6f4121963c110580782ab53ff3ffb57d88a5c240fc03392782b2bec39",
+          "90101e9282e3524aeff244ba492b432772414abd8b834726bf40f825d22dcb51",
+          "6915148048a787ae3e0b2eab1ba43c0259d52d8281a3589059c067acb88c603f",
+          "630a68101632e09f3e84cfc920b0aea8252f7336c8b0ee17f2c4fb4af30db36d",
+          "5e1e04d0b232341f963dd4c5f2c2e3400632086803cfb8ba3c6f806ab6843656",
+          "4036f5ae2a832629de96ca36ea8993470c090cd0b634ab24756c3eaa2b2c6a0c",
+          "6ffacaf97fc95e6cef3277980881098a8de4e74e111297e36a9de76d31039b9c",
+          "95ee8180784a70da86a5725400363c1c36c1028802d5ec18b611db69116b629a",
+          "a44502409a33a0e202ce780266ff9797c9d247c44d6bbafa8eef312879076744",
+          "4424b3de4f6e20922c267bf833ead8a5aaec44733ea8e903cf33cd1a94d297a4",
+          "3a239e441fda2d3a1e2f486e544d974aa1db6d0f10ca408dd8309949d5f9a9d9",
+          "0791045b4412cdd5f1e1c62a7afd75b1af067898ca2d0181d8121d252688d233"
+        ],
+        "graph_id": "expanded-relation-ac670f1c9317b7c9",
+        "invariant_checks": {
+          "bound_interval_capture": true,
+          "cross_video_binding_specificity": true,
+          "deterministic_replay": true,
+          "fixed_frame_budget": true,
+          "no_outcome_fields": true,
+          "one_answer_call": true,
+          "temporal_shift_equivariance": true
+        },
+        "mean_objective_score": 0.46491228070175433,
+        "outcomes_read": false,
+        "population_size": 19
+      },
+      "graph": {
+        "applicability": "explicit_text_span_requests_concurrent_visual_state",
+        "binder": "lexical_span_binder",
+        "carrier": "interval",
+        "defect": "localized_anchor_does_not_receive_local_observation_budget",
+        "graph_id": "expanded-relation-ac670f1c9317b7c9",
+        "invariants": [
+          "bound_interval_capture",
+          "cross_video_binding_specificity",
+          "deterministic_replay",
+          "fixed_frame_budget",
+          "no_outcome_fields",
+          "one_answer_call",
+          "temporal_shift_equivariance"
+        ],
+        "nodes": [
+          {
+            "op": "DETECT",
+            "primitive": "explicit_text_span_requests_concurrent_visual_state"
+          },
+          {
+            "op": "DIAGNOSE",
+            "primitive": "localized_anchor_does_not_receive_local_observation_budget"
+          },
+          {
+            "op": "BIND",
+            "output_type": "bound_interval",
+            "primitive": "lexical_span_binder"
+          },
+          {
+            "input_type": "bound_interval",
+            "op": "TRANSFORM",
+            "output_type": "interval_trace",
+            "primitive": "local_reallocation"
+          },
+          {
+            "op": "VERIFY",
+            "primitives": [
+              "bound_interval_capture",
+              "cross_video_binding_specificity",
+              "deterministic_replay",
+              "fixed_frame_budget",
+              "no_outcome_fields",
+              "one_answer_call",
+              "temporal_shift_equivariance"
+            ]
+          },
+          {
+            "input_type": "interval_trace",
+            "op": "SELECT",
+            "primitive": "anchor_capture_objective"
+          },
+          {
+            "key": "expanded-relation-ac670f1c9317b7c9",
+            "op": "PERSIST",
+            "primitive": "persist_relation_graph"
+          }
+        ],
+        "objective": "anchor_capture_objective",
+        "proposal_sha256": "62f7c16ff900354f36fce2f295a63e5ca50259be0dd244a6fd8a2719a9c5acc8",
+        "proposed_name": "interval-lexical-boundary-contrast-program",
+        "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+        "registry_version": "expanded-dsl-v1",
+        "transformation": "local_reallocation"
+      }
+    },
+    {
+      "admission": {
+        "admission_sha256": "c4faf6e5f9560b7eb5d78e40fae9fc5af12fa046747a1abd72dbd2547dfd315a",
+        "carrier": "slot_set",
+        "execution_sha256s": [
+          "b301cd0f87f2b0e521ac70b6ae505f3f527a7ffbbd9e904e9ec8f7b09ef041a8",
+          "6d83df018a1996746f839d9a82189a5e15e56b7f99d4d774dcb185b71cafb196",
+          "724530787415824358e5c74ef60b7e94a5e53415abdf502398f35b6552254aa6",
+          "bd58ef5fa5b700d274530d406899eddd5afd1e0ccfd7a47fbcd24c35259c0f6f",
+          "be295caad25ddf932f3dde8922b45da0a2b10b77d3ba408800fb5dcfda093852",
+          "8274ba3bd1281a437d221a9a8cb9769a908b88266ee001f035f78f3a80de521f",
+          "70a3213fcdbf6c18f753d111cdf368f78951cf7554cdfea66c52aa93ef6c01e2",
+          "7e4ba412b979e3e19cb1cd6de9243408f94138ab82bb0b25ad2be04a96ed33d3",
+          "63a5936b8e4a5313cf882180656c90c915fc972d78adb5f5a9dd58ce45905495",
+          "a8c0b2371eef5abdc5d79c1438a0f1055b40cbf4379d617abec120a54bc53a2f",
+          "d0953c19f1bc3c65d17db58b8468ac89f187541814d5b5a31f162f39ae2bcb89",
+          "2a42ab141e2bae69b0639054e0f6fb5a25b9f40dbfb6dcc72808b9b35923bfb2",
+          "354f74ef31093c9df302103dda116a8c9be395d2da3639a38d4472dece4db0c5",
+          "42e203cee9a4db0dd185013b6e55a0fca1da6f11c11add5e42a7c1a6b36ea5a1",
+          "8898ab1d18694e7d09a6c19d2af16f707dfce544c6e96beffaf6d4727244de54",
+          "05e4f1b1ef64a43bf3726c0e5ed849d7ddffe03c71bddfd9e7272f2f66ef8d62",
+          "2798b8d2820f4699834ed59ea50906d2eaf5e52fbce25a967de4786129d4df15",
+          "e0d970f8d9323f754e59d61e4da7183779fccd1c94f648371896c2ec16231ede",
+          "8a58be9a01e1b05ef26bf39497d7bfa23f63139608f5ade68926b23fd1cde22a",
+          "4b0a1a6a8115a5e05a52f0d106b0e254b58e35b1b0af8760c6b39587d605f14a",
+          "12ef4fea5a839ee3fbabf7bd2198dde303eee291b0dcac8572cadd75a15a104e",
+          "1b9a441beaf441d53c7bd47623ada10126428bba2b46de53dd1e526d3ee5eca7",
+          "71ec61ab63092f2a95fef865b1efb31584c8d23c750795bd438c5e426e2d2ad1",
+          "508b4a54ec128ac753e1188c29a2be4d678f3710d083847c8e4ddaaba57c33fa",
+          "788fd883cfd28de8a917500c4b704b6b5bb7c668a9476ebd6452099936f2d992",
+          "503fed86bcebc01f3d2c12bc6cda788f9ecf65278520e5df29a097490ae584bf",
+          "d0c7596019066accc230e46f42c2065e06f6d281e874f61d0820cb3d5d20b4df",
+          "b74eef701717d187d31978466283f68bd275ddecce14a6e11f214170b6074c62",
+          "37771b0e4ecf511c3becee267f91cfbcafe921d3bd119dc0ae908181db1e926d",
+          "fb6b631ec6e385c3fd14e815acf0c8888ba7a3d4bd68d51e01266790e51bfe6b",
+          "72da83ca7e1658f396babe9353509e8db078e1d8ed3bcc3d58687e992573ed24",
+          "a999d03f7c7c708ba16ba59fcfc4d30eab9db3f3b4cbbca4d363cb206cefe00a",
+          "237b0962c7eb5463e512cc28e12ffe90bfaecb2fa4faa4cdf586f3d763e42b78",
+          "47b7b39b57c43e7d0d67896d3aa4030d05498070a7d17c78379584ce69e8dc7b",
+          "88e81acd475769b339fe46b8c5e25acd1e07c46d26d288b7224608c7335debf5",
+          "d1b198d8d2983d6b4af08e8bd6eda25d9c67bcd400da67420eb4b060594f0976",
+          "ae233ea50b927b65458bd3cbca5a3944030c2a193dc7676a8a300b44a4495f84",
+          "b11655d902c5aceb078e302cc631f96c1d2bca5d3ba29c78cc1d79240b77cf63",
+          "6204f7002197fb0f626caf093a96fce227e9106d4cabf3e74601a332d81f17d5",
+          "e2e849eee31c260d4c927ba08bb2e72fdc3d5dcc37df72bcc0a6733b3f5fffe5"
+        ],
+        "graph_id": "expanded-relation-0202fed5904b6f32",
+        "invariant_checks": {
+          "balanced_slot_allocation": true,
+          "deterministic_replay": true,
+          "every_required_slot_covered": true,
+          "fixed_frame_budget": true,
+          "no_outcome_fields": true,
+          "one_answer_call": true
+        },
+        "mean_objective_score": 1.0,
+        "outcomes_read": false,
+        "population_size": 40
+      },
+      "graph": {
+        "applicability": "multiple_semantic_observations_must_all_be_found",
+        "binder": "independent_semantic_slots_binder",
+        "carrier": "slot_set",
+        "defect": "independent_retrieval_can_starve_a_required_evidence_slot",
+        "graph_id": "expanded-relation-0202fed5904b6f32",
+        "invariants": [
+          "balanced_slot_allocation",
+          "deterministic_replay",
+          "every_required_slot_covered",
+          "fixed_frame_budget",
+          "no_outcome_fields",
+          "one_answer_call"
+        ],
+        "nodes": [
+          {
+            "op": "DETECT",
+            "primitive": "multiple_semantic_observations_must_all_be_found"
+          },
+          {
+            "op": "DIAGNOSE",
+            "primitive": "independent_retrieval_can_starve_a_required_evidence_slot"
+          },
+          {
+            "op": "BIND",
+            "output_type": "bound_slot_set",
+            "primitive": "independent_semantic_slots_binder"
+          },
+          {
+            "input_type": "bound_slot_set",
+            "op": "TRANSFORM",
+            "output_type": "slot_set_trace",
+            "primitive": "independent_topk"
+          },
+          {
+            "op": "VERIFY",
+            "primitives": [
+              "balanced_slot_allocation",
+              "deterministic_replay",
+              "every_required_slot_covered",
+              "fixed_frame_budget",
+              "no_outcome_fields",
+              "one_answer_call"
+            ]
+          },
+          {
+            "input_type": "slot_set_trace",
+            "op": "SELECT",
+            "primitive": "minimum_slot_coverage_objective"
+          },
+          {
+            "key": "expanded-relation-0202fed5904b6f32",
+            "op": "PERSIST",
+            "primitive": "persist_relation_graph"
+          }
+        ],
+        "objective": "minimum_slot_coverage_objective",
+        "proposal_sha256": "6c1b8001960d2c35f01be0d70cfeb359f91773726bb2630c91ae814634bc727d",
+        "proposed_name": "slot_set_observation_program_01",
+        "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+        "registry_version": "expanded-dsl-v1",
+        "transformation": "independent_topk"
+      }
+    },
+    {
+      "admission": {
+        "admission_sha256": "3d5c18ef9b91f66d78891df37642daf57bec46e19a3328cdcbba87b99162ca57",
+        "carrier": "event_time",
+        "execution_sha256s": [
+          "b7f375440418e5dcc1a151d0bbfba1bd282db748c0b7d18695ad250b2e3bd723",
+          "9e8a91c26fed97d3872e6672a071bf6f53d1ee351fd6ac19df56eb3535a0806d",
+          "a2c5301b06c095e15c44055b6c520acacb412d383da0bea9be6491ef865cddbe",
+          "e4fab834e2446ca5de07cf0e326c70924df22b13cc806b3c2874c68366caae4d",
+          "113fd176fcd9fce6f016313940569b0915352df5d6eb2e198994b379a8269f1e",
+          "49e4a1bb0a4a42f8e3c89dd83159b955b95459a9e106d23b6593ebc9faab8709",
+          "09ee86e15901e25b1120a8a5a737fffdacdc2a6ecd25d01b5d2698b90e40ee29",
+          "68bc4f64f771ad7ac1ac4a75285c8bbc54730201f45e97dedf2d91134f72d41f",
+          "d47dd2dcc5baca95e90ac3ad320dad8e25b07ae4def43131ba6182a37f54c69f",
+          "84a39141a8d675e73001413489a82d1aedd68ce88937d9ac542b2317dd0934dc",
+          "58c785b803f695e2cb0ee55591cb43bb2b1a575a0ca21b7dcdfe53a8a1394baa",
+          "2ac35697669f02eafb9deba322c323a1a5d16d885ffeca1411de1fde95ba10e7",
+          "1d8f5c63a00bc7783458668d564a591edc791d5a89ba20f79fd587df50f10b53",
+          "6d4e678757292363d5ea11c05af2149e6eddd278ff56ed75b4903a18d377dfa1",
+          "8523bd8b367f0269467b2ee644cfd42491cb4b9c40ef11179351a70dae86c777",
+          "b524a0462978eb67125279bc88f492525933dc734aeada7ab63334b146e4feba",
+          "94b95f4b1ca7d81a1c60b6204efa175f43f637e9250260191c85cbea97ba4b2c",
+          "cb8c142fdde4aae53631ec384fa1bbbeeaa1cac47e38e333fbbf51e8637b035d",
+          "83c1788b114cfd387f019fe5af9b5b1e1673b4dea7f638ce6f0abfb41c7a1e28",
+          "ecefc3f429380092a6bf8f5fa6e56119167fab6aae377c939d4551fca6c83f23",
+          "c7fac126a775eb4a05c134a08e70d102350d56b3434a9a5163a17af6429c9cc0",
+          "04ee161263c5f75e9aa3e66af24953cb08013baf6fbf213a03e04d94deba098f",
+          "b8f6f5fa1615a217a26c268895d4cad0ab5ef34e801e94641e84a9db893cb956",
+          "65b3b45c0eef25c509bde911806b102d860ea1502297ad7838ac128141498fbc",
+          "75f90ab49d38058b1c5b87a48a43b14325382732a26156e364c022c49d5b35db",
+          "91e3cc88ac926df4255067ef2085987ee3d5597aacb9ad81f6ced226748f380c",
+          "de0cd3b13979a82e6cdf98d56637cebb732ec401bc461942c3a9853f3db07be0",
+          "2b116e651c847c8840f095214a3c784d673a129f7358f10ca3ffa5c7e37a2625",
+          "d284bac770e44b1cf9174a75fe3ac2c5b90530576c945364f3e526ce93cf1349",
+          "6c10c98b4dfa328bc34ff33542eba2df3a34201cf0415a2f96a89a49d238b322",
+          "633c4d4dbeb9d7c96ec580789a15b13d3f8b233b896c7032f853f77eb5a64a0a",
+          "d2efdec9b242f42433a843e056c47c212594c1326c7a2bc39f7b93332501c017",
+          "dcb23def2818805d7d7c543b3d48f1fef3f4184ca287a7ba80c8e5aad76495a3",
+          "c0c8ccdd5f43d581d4bb3e42f3fcf929dde8eac01441af4a2f9c61920e2921cd",
+          "8b743ca9d35668c26652dfb8aa46482c09214a1b36c2381ac5d2a83ed4fc4a24",
+          "8967865827ad452dd54014c389c7753dfeefa9d9d9ecea1792bed19d62aa0bfc",
+          "6a0403c72fc9e2f736445c7283fe94724fb2949e9275141cafce49ed47666f74",
+          "5b7a13a34d2784e6051c8c3d11155c18d8f40dfd0de7b8e889ee3b08031f423c",
+          "692e8d12ff36ac2a7878d8ea71c1b7b3519639442ec91dbd0a722cf04da4e394",
+          "d893df91948e8b2814d86eb863ab109e54efb5e4895675cec43996b0b69ecafa",
+          "b1265a6a3d22030cba480a1720b086069077c6cb0a07e54c0d975ef347fcd4e6",
+          "7483059d2011a8584b3df538663bae690268a325d7f8fb441a59832d5c7f61a8",
+          "7050f1b843a5a7cce2d053cff77f57837dfbbaca67529fb1dbab9e7af42336a4",
+          "781184e03f7194a1ee51356aa06248ea2042d336b734646d3ebdd90a131d5d20",
+          "a0abcf838608d9954b81f47d64ea3b2342239c09c80c8c5bd04072c1a63bd204",
+          "e3deae4c701b9a1e9adf6ed26ef45f428f65763d986169c9d878250ca0b05eb7",
+          "c0624cfe761489a57aeb8ba4e7283e91c39bb19e4142179955c5ff69c2baf149",
+          "1dd840b0a75e9821e849f1da6fce28a461cb146ebe71190cdc3f43f2a3e98405"
+        ],
+        "graph_id": "expanded-relation-d7a0538c7d0be52b",
+        "invariant_checks": {
+          "deterministic_replay": true,
+          "finite_relation_values": true,
+          "fixed_frame_budget": true,
+          "identical_visual_schedule": true,
+          "no_outcome_fields": true,
+          "one_answer_call": true,
+          "shuffled_order_changes_relation_trace": true
+        },
+        "mean_objective_score": 0.3977777777777778,
+        "outcomes_read": false,
+        "population_size": 48
+      },
+      "graph": {
+        "applicability": "each_option_is_an_ordered_sequence_of_retrievable_events",
+        "binder": "cross_view_audited_event_retrieval_binder",
+        "carrier": "event_time",
+        "defect": "independent_event_times_are_not_composed_into_candidate_relations",
+        "graph_id": "expanded-relation-d7a0538c7d0be52b",
+        "invariants": [
+          "deterministic_replay",
+          "finite_relation_values",
+          "fixed_frame_budget",
+          "identical_visual_schedule",
+          "no_outcome_fields",
+          "one_answer_call",
+          "shuffled_order_changes_relation_trace"
+        ],
+        "nodes": [
+          {
+            "op": "DETECT",
+            "primitive": "each_option_is_an_ordered_sequence_of_retrievable_events"
+          },
+          {
+            "op": "DIAGNOSE",
+            "primitive": "independent_event_times_are_not_composed_into_candidate_relations"
+          },
+          {
+            "op": "BIND",
+            "output_type": "bound_event_time",
+            "primitive": "cross_view_audited_event_retrieval_binder"
+          },
+          {
+            "input_type": "bound_event_time",
+            "op": "TRANSFORM",
+            "output_type": "event_time_trace",
+            "primitive": "raw_timestamp_table"
+          },
+          {
+            "op": "VERIFY",
+            "primitives": [
+              "deterministic_replay",
+              "finite_relation_values",
+              "fixed_frame_budget",
+              "identical_visual_schedule",
+              "no_outcome_fields",
+              "one_answer_call",
+              "shuffled_order_changes_relation_trace"
+            ]
+          },
+          {
+            "input_type": "event_time_trace",
+            "op": "SELECT",
+            "primitive": "confidence_margin_objective"
+          },
+          {
+            "key": "expanded-relation-d7a0538c7d0be52b",
+            "op": "PERSIST",
+            "primitive": "persist_relation_graph"
+          }
+        ],
+        "objective": "confidence_margin_objective",
+        "proposal_sha256": "5b32d578e127621f3dcaf7fe534340d393cadaf92db9c39c531f5a024f3c6c51",
+        "proposed_name": "cross-view-event-agreement-observer",
+        "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+        "registry_version": "expanded-dsl-v1",
+        "transformation": "raw_timestamp_table"
+      }
+    }
+  ],
+  "fallback": "Direct",
+  "outcomes_read": false,
+  "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+  "registry_version": "expanded-dsl-v1",
+  "schema_version": 2,
+  "size_with_direct": 4
+}

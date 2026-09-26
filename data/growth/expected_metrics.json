@@ -1,0 +1,232 @@
+{
+  "adjacent_checkpoint_tests": {
+    "L1_vs_L0": {
+      "bootstrap_ci95": [
+        0.43431053203040176,
+        3.7790697674418605
+      ],
+      "delta_percentage_points": 2.0895522388059646,
+      "exact_mcnemar_p": 0.009853448195259264,
+      "holm_adjusted_p": 0.029560344585777793,
+      "net": 21,
+      "r2w": 20,
+      "w2r": 41
+    },
+    "L2_vs_L1": {
+      "bootstrap_ci95": [
+        0.0,
+        10.0
+      ],
+      "delta_percentage_points": 5.0,
+      "exact_mcnemar_p": 0.049041748046875,
+      "holm_adjusted_p": 0.09808349609375,
+      "net": 9,
+      "r2w": 4,
+      "w2r": 13
+    },
+    "L3_vs_L2": {
+      "bootstrap_ci95": [
+        -0.5555555555555556,
+        1.9444444444444444
+      ],
+      "delta_percentage_points": 0.6944444444444429,
+      "exact_mcnemar_p": 0.45825831964612007,
+      "holm_adjusted_p": 0.45825831964612007,
+      "net": 5,
+      "r2w": 12,
+      "w2r": 17
+    }
+  },
+  "adjacent_nondecrease_checks": [
+    true,
+    true,
+    true
+  ],
+  "bootstrap_replicates": 10000,
+  "checkpoint_metrics": {
+    "L0": {
+      "carriers": {
+        "event_time": {
+          "accuracy_percent": 37.083333333333336,
+          "correct": 89,
+          "coverage_percent": 0.0,
+          "covered_by_program": 0,
+          "newly_covered_since_previous": 0,
+          "rows": 240,
+          "technical_failures": 0
+        },
+        "interval": {
+          "accuracy_percent": 63.88059701492537,
+          "correct": 214,
+          "coverage_percent": 0.0,
+          "covered_by_program": 0,
+          "newly_covered_since_previous": 0,
+          "rows": 335,
+          "technical_failures": 0
+        },
+        "slot_set": {
+          "accuracy_percent": 55.0,
+          "correct": 33,
+          "coverage_percent": 0.0,
+          "covered_by_program": 0,
+          "newly_covered_since_previous": 0,
+          "rows": 60,
+          "technical_failures": 0
+        }
+      },
+      "delta_vs_L0_bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "delta_vs_L0_percentage_points": 0.0,
+      "macro_accuracy_percent": 51.9879767827529,
+      "macro_coverage_percent": 0.0,
+      "paired_vs_L0": {
+        "exact_mcnemar_p": 1.0,
+        "net": 0,
+        "r2w": 0,
+        "w2r": 0
+      }
+    },
+    "L1": {
+      "carriers": {
+        "event_time": {
+          "accuracy_percent": 37.083333333333336,
+          "correct": 89,
+          "coverage_percent": 0.0,
+          "covered_by_program": 0,
+          "newly_covered_since_previous": 0,
+          "rows": 240,
+          "technical_failures": 0
+        },
+        "interval": {
+          "accuracy_percent": 70.14925373134328,
+          "correct": 235,
+          "coverage_percent": 99.70149253731343,
+          "covered_by_program": 334,
+          "newly_covered_since_previous": 334,
+          "rows": 335,
+          "technical_failures": 0
+        },
+        "slot_set": {
+          "accuracy_percent": 55.0,
+          "correct": 33,
+          "coverage_percent": 0.0,
+          "covered_by_program": 0,
+          "newly_covered_since_previous": 0,
+          "rows": 60,
+          "technical_failures": 0
+        }
+      },
+      "delta_vs_L0_bootstrap_ci95": [
+        0.43007295232168175,
+        3.746397694524496
+      ],
+      "delta_vs_L0_percentage_points": 2.0895522388059646,
+      "macro_accuracy_percent": 54.07752902155887,
+      "macro_coverage_percent": 33.233830845771145,
+      "paired_vs_L0": {
+        "exact_mcnemar_p": 0.009853448195259264,
+        "net": 21,
+        "r2w": 20,
+        "w2r": 41
+      }
+    },
+    "L2": {
+      "carriers": {
+        "event_time": {
+          "accuracy_percent": 37.083333333333336,
+          "correct": 89,
+          "coverage_percent": 0.0,
+          "covered_by_program": 0,
+          "newly_covered_since_previous": 0,
+          "rows": 240,
+          "technical_failures": 0
+        },
+        "interval": {
+          "accuracy_percent": 70.14925373134328,
+          "correct": 235,
+          "coverage_percent": 99.70149253731343,
+          "covered_by_program": 334,
+          "newly_covered_since_previous": 0,
+          "rows": 335,
+          "technical_failures": 0
+        },
+        "slot_set": {
+          "accuracy_percent": 70.0,
+          "correct": 42,
+          "coverage_percent": 100.0,
+          "covered_by_program": 60,
+          "newly_covered_since_previous": 60,
+          "rows": 60,
+          "technical_failures": 0
+        }
+      },
+      "delta_vs_L0_bootstrap_ci95": [
+        2.1039709922688647,
+        12.334827287704893
+      ],
+      "delta_vs_L0_percentage_points": 7.089552238805965,
+      "macro_accuracy_percent": 59.07752902155887,
+      "macro_coverage_percent": 66.56716417910447,
+      "paired_vs_L0": {
+        "exact_mcnemar_p": 0.0009010035205219422,
+        "net": 30,
+        "r2w": 24,
+        "w2r": 54
+      }
+    },
+    "L3": {
+      "carriers": {
+        "event_time": {
+          "accuracy_percent": 39.166666666666664,
+          "correct": 94,
+          "coverage_percent": 100.0,
+          "covered_by_program": 240,
+          "newly_covered_since_previous": 240,
+          "rows": 240,
+          "technical_failures": 0
+        },
+        "interval": {
+          "accuracy_percent": 70.14925373134328,
+          "correct": 235,
+          "coverage_percent": 99.70149253731343,
+          "covered_by_program": 334,
+          "newly_covered_since_previous": 0,
+          "rows": 335,
+          "technical_failures": 0
+        },
+        "slot_set": {
+          "accuracy_percent": 70.0,
+          "correct": 42,
+          "coverage_percent": 100.0,
+          "covered_by_program": 60,
+          "newly_covered_since_previous": 0,
+          "rows": 60,
+          "technical_failures": 0
+        }
+      },
+      "delta_vs_L0_bootstrap_ci95": [
+        2.5459124608980517,
+        13.201110226978903
+      ],
+      "delta_vs_L0_percentage_points": 7.7839966832504075,
+      "macro_accuracy_percent": 59.77197346600331,
+      "macro_coverage_percent": 99.90049751243781,
+      "paired_vs_L0": {
+        "exact_mcnemar_p": 0.0009231579958033544,
+        "net": 35,
+        "r2w": 36,
+        "w2r": 71
+      }
+    }
+  },
+  "growth_gain_percentage_points": 7.7839966832504075,
+  "labels_opened_after_all_prediction_banks_froze": true,
+  "macro_definition": "unweighted mean of interval, slot_set, and event_time accuracies",
+  "multiple_comparison_correction": "Holm over three adjacent exact McNemar tests",
+  "nondecreasing_adjacent_checkpoints": true,
+  "schema_version": 1,
+  "status": "EVALUATED_FROZEN_CHECKPOINTS",
+  "uncertainty_definition": "paired bootstrap over video clusters within carrier, then unweighted carrier macro-average"
+}

@@ -1,0 +1,25 @@
+{
+  "carrier_order": [
+    "interval",
+    "slot_set",
+    "event_time"
+  ],
+  "exact_reference_matches": 0,
+  "limits": {
+    "candidate_cap": 4,
+    "minimum_recurrence": 10,
+    "proposal_attempt_cap": 6,
+    "seed": 20260916,
+    "structural_execution_cap": 64
+  },
+  "proposal_attempts": 18,
+  "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+  "selected_graph_ids": [
+    "expanded-relation-ac670f1c9317b7c9",
+    "expanded-relation-0202fed5904b6f32",
+    "expanded-relation-d7a0538c7d0be52b"
+  ],
+  "source": "frozen real-context open-composition acquisition; model replies replayed offline",
+  "structurally_valid_candidates": 10,
+  "unique_compositions": 3
+}

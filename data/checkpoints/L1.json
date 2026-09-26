@@ -1,0 +1,115 @@
+{
+  "entries": [
+    {
+      "admission": {
+        "admission_sha256": "c76f8519b1b632831a621e2194bb2c0377757a0a552daeb5ac549a62be6bfccd",
+        "carrier": "interval",
+        "execution_sha256s": [
+          "6e3f8846bb1fcb4ae4f3a2b440f57f35219f758a64838ae784938e9b06ea9c24",
+          "f158c40dba10d38a1203cbf58bfe48724b6ed53e88e22fa2071ace24cdf66670",
+          "cce059594f4b11ba1f2d38bbb9a7ccba52ef858dca0aebf2e1241034b6c32407",
+          "8a8046936c9d553c3248b649b4b2174bc1b83fc1319a177495c21ef1c3f3f68d",
+          "8893f6657c5294079ab89d7f55db7167ca998814dae132b176fc90ccfb979d24",
+          "620ad27185a713a8f7083d7236f8171f801db624314bfa81d72b2809d2f8f06f",
+          "99a644161a204cb1f10f86d491f1dd05904638d551fc9c7d89678547cfe0e018",
+          "957a2ca6f4121963c110580782ab53ff3ffb57d88a5c240fc03392782b2bec39",
+          "90101e9282e3524aeff244ba492b432772414abd8b834726bf40f825d22dcb51",
+          "6915148048a787ae3e0b2eab1ba43c0259d52d8281a3589059c067acb88c603f",
+          "630a68101632e09f3e84cfc920b0aea8252f7336c8b0ee17f2c4fb4af30db36d",
+          "5e1e04d0b232341f963dd4c5f2c2e3400632086803cfb8ba3c6f806ab6843656",
+          "4036f5ae2a832629de96ca36ea8993470c090cd0b634ab24756c3eaa2b2c6a0c",
+          "6ffacaf97fc95e6cef3277980881098a8de4e74e111297e36a9de76d31039b9c",
+          "95ee8180784a70da86a5725400363c1c36c1028802d5ec18b611db69116b629a",
+          "a44502409a33a0e202ce780266ff9797c9d247c44d6bbafa8eef312879076744",
+          "4424b3de4f6e20922c267bf833ead8a5aaec44733ea8e903cf33cd1a94d297a4",
+          "3a239e441fda2d3a1e2f486e544d974aa1db6d0f10ca408dd8309949d5f9a9d9",
+          "0791045b4412cdd5f1e1c62a7afd75b1af067898ca2d0181d8121d252688d233"
+        ],
+        "graph_id": "expanded-relation-ac670f1c9317b7c9",
+        "invariant_checks": {
+          "bound_interval_capture": true,
+          "cross_video_binding_specificity": true,
+          "deterministic_replay": true,
+          "fixed_frame_budget": true,
+          "no_outcome_fields": true,
+          "one_answer_call": true,
+          "temporal_shift_equivariance": true
+        },
+        "mean_objective_score": 0.46491228070175433,
+        "outcomes_read": false,
+        "population_size": 19
+      },
+      "graph": {
+        "applicability": "explicit_text_span_requests_concurrent_visual_state",
+        "binder": "lexical_span_binder",
+        "carrier": "interval",
+        "defect": "localized_anchor_does_not_receive_local_observation_budget",
+        "graph_id": "expanded-relation-ac670f1c9317b7c9",
+        "invariants": [
+          "bound_interval_capture",
+          "cross_video_binding_specificity",
+          "deterministic_replay",
+          "fixed_frame_budget",
+          "no_outcome_fields",
+          "one_answer_call",
+          "temporal_shift_equivariance"
+        ],
+        "nodes": [
+          {
+            "op": "DETECT",
+            "primitive": "explicit_text_span_requests_concurrent_visual_state"
+          },
+          {
+            "op": "DIAGNOSE",
+            "primitive": "localized_anchor_does_not_receive_local_observation_budget"
+          },
+          {
+            "op": "BIND",
+            "output_type": "bound_interval",
+            "primitive": "lexical_span_binder"
+          },
+          {
+            "input_type": "bound_interval",
+            "op": "TRANSFORM",
+            "output_type": "interval_trace",
+            "primitive": "local_reallocation"
+          },
+          {
+            "op": "VERIFY",
+            "primitives": [
+              "bound_interval_capture",
+              "cross_video_binding_specificity",
+              "deterministic_replay",
+              "fixed_frame_budget",
+              "no_outcome_fields",
+              "one_answer_call",
+              "temporal_shift_equivariance"
+            ]
+          },
+          {
+            "input_type": "interval_trace",
+            "op": "SELECT",
+            "primitive": "anchor_capture_objective"
+          },
+          {
+            "key": "expanded-relation-ac670f1c9317b7c9",
+            "op": "PERSIST",
+            "primitive": "persist_relation_graph"
+          }
+        ],
+        "objective": "anchor_capture_objective",
+        "proposal_sha256": "62f7c16ff900354f36fce2f295a63e5ca50259be0dd244a6fd8a2719a9c5acc8",
+        "proposed_name": "interval-lexical-boundary-contrast-program",
+        "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+        "registry_version": "expanded-dsl-v1",
+        "transformation": "local_reallocation"
+      }
+    }
+  ],
+  "fallback": "Direct",
+  "outcomes_read": false,
+  "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+  "registry_version": "expanded-dsl-v1",
+  "schema_version": 2,
+  "size_with_direct": 2
+}

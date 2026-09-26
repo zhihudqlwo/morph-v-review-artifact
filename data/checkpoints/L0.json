@@ -1,0 +1,9 @@
+{
+  "entries": [],
+  "fallback": "Direct",
+  "outcomes_read": false,
+  "registry_digest": "77157e0e0e1ba9c9606be6fb00ad8cb105932b994384bee89c98bd9c28f71aee",
+  "registry_version": "expanded-dsl-v1",
+  "schema_version": 2,
+  "size_with_direct": 1
+}

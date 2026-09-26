@@ -1,0 +1,10 @@
+{
+  "carrier": "interval",
+  "checkpoint": "L2",
+  "generation_complete": true,
+  "outcomes_read": false,
+  "prediction_bank_sha256": "8581604dd9f0882115a259f0883f7735a70a2a85512dd5689213cb5987454736",
+  "prediction_count": 335,
+  "schema_version": 1,
+  "technical_failures": 0
+}

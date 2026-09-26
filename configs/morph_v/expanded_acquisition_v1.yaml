@@ -1,0 +1,32 @@
+schema_version: 1
+experiment_id: "morph-v/anonymous-frozen-acquisition-replay"
+context_bank: "data/acquisition/contexts.jsonl"
+output_root: "outputs/acquisition"
+
+limits:
+  minimum_recurrence: 10
+  proposal_attempt_cap: 6
+  candidate_cap: 4
+  structural_execution_cap: 64
+  seed: 20260916
+
+proposer:
+  model: "qwen3.6-27b"
+  paper_model: "Qwen3.6-27B"
+  endpoint: ""
+  endpoint_env: "MORPH_QWEN_BASE_URL"
+  api_key_env: "MORPH_QWEN_API_KEY"
+  api_key_required: true
+  enable_thinking: false
+  top_k: 20
+  stream: true
+  timeout_seconds: 180
+  maximum_tokens: 768
+  seed: 20260916
+
+protocol:
+  initial_library: "Direct"
+  carrier_order: ["interval", "slot_set", "event_time"]
+  withheld_complete_signatures: 3
+  labels_available_during_acquisition: false
+  answer_calls_during_acquisition: 0

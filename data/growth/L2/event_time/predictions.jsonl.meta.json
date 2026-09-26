@@ -1,0 +1,10 @@
+{
+  "carrier": "event_time",
+  "checkpoint": "L2",
+  "generation_complete": true,
+  "outcomes_read": false,
+  "prediction_bank_sha256": "f0e5e38c3081d62c13dbe5b927016f114731c09e12535897fd0d8e63582463f0",
+  "prediction_count": 240,
+  "schema_version": 1,
+  "technical_failures": 0
+}

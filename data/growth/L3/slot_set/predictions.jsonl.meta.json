@@ -1,0 +1,10 @@
+{
+  "carrier": "slot_set",
+  "checkpoint": "L3",
+  "generation_complete": true,
+  "outcomes_read": false,
+  "prediction_bank_sha256": "ba703aa96d2812ba5282666170a487c6686f208a1b348453d0ec4c665118061f",
+  "prediction_count": 60,
+  "schema_version": 1,
+  "technical_failures": 0
+}
